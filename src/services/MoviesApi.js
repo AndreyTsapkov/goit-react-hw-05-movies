@@ -12,7 +12,7 @@ const getGenreArrayLibrary = genres => genres.map(el => el.name);
 export const getImgPath = imgPath =>
   !imgPath ? `${noImg}` : `${IMG_URL}${imgPath}`;
 
-const getDate = date => (!date ? data : date.slice(0, 4));
+const getDate = date => (!date ? date : date.slice(0, 4));
 
 // -------------------------------------------------------------
 export const normalizationMovieObj = ({
