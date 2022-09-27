@@ -1,7 +1,14 @@
 import genreList from './genreList';
 import settings from './settings';
 import noImg from '../images/noImageAvailable.jpg';
-const { IMG_URL } = settings;
+
+const ssettings = {
+  API_KEY: '7cb8097836a7a1f4e5c19953961668c8',
+  BASE_URL: 'https://api.themoviedb.org/3',
+  IMG_URL: 'https://image.tmdb.org/t/p/w500/',
+};
+
+const { IMG_URL } = ssettings;
 
 const getGenreArray = genre_ids => genre_ids.map(el => genreList[`${el}`]);
 
